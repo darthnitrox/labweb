@@ -1,0 +1,80 @@
+<!DOCTYPE text/html>
+<html>
+<head>
+<title>Адаптивная верстка</title>
+<meta charset="UTF-8">
+<style>
+*{margin: 0px; padding: 0px; border: 0px;}
+#page{
+    max-width: 1200px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+#page header{
+    background: #00FFFF;
+    padding: 50px 10px;
+}
+#page #leftblock{
+    position: relative;
+    background: #4682B4;
+    float: left;
+    padding: 10px 5px;
+    margin-right: 10px;
+}
+#page #leftblock p{
+    background: #FFFF00;
+    margin-bottom: 5px; 
+}
+#page #content{
+    position: relative;
+}
+#footer{
+    width: 100%;
+    overflow: hidden;
+    display: table;
+}
+#footer .blockinfooter{
+    background: #006400;
+    display: table-cell;
+    padding-bottom: 30px;
+}
+.clr{
+    clear: both;
+}
+@media screen and (max-width: 768px) {
+    #leftblock{
+        width: 100%;
+        display: table;
+    }
+    #leftblock p{
+        display: table-cell;
+    }
+    #footer .blockinfooter{
+    background: #006400;
+    display: block;
+}
+}
+</style>
+</head>
+<body>
+<div id="page">
+<header>Header</header>
+<div id="leftblock">
+<p>Lorem, ipsum</p>
+<p>Velit, nulla?</p>
+<p>A, alias. </p>
+<p>Aperiam, id. </p>
+<p>Tenetur, ipsum! </p>
+</div>
+<div id="content">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+<div class="clr"></div>
+<div id="footer">
+<div class="blockinfooter">Box-1</div>
+<div class="blockinfooter">Box-2</div>
+<div class="blockinfooter">Box-3</div>
+</div>
+</div>
+</body>
+</html>
